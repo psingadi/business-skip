@@ -1,12 +1,12 @@
 import React from 'react';
-import { MapPin, Trash2, Check, FileCheck, Calendar, CreditCard } from 'lucide-react';
+import { MapPin, Trash2, Check, Shield, Calendar, CreditCard } from 'lucide-react';
 
 const ProgressSteps: React.FC = () => {
   const steps = [
     { id: 1, label: 'Postcode', icon: MapPin, completed: true, description: 'Location verified' },
     { id: 2, label: 'Waste Type', icon: Trash2, completed: true, description: 'Garden waste selected' },
     { id: 3, label: 'Select Skip', icon: Check, active: true, description: 'Choose your size' },
-    { id: 4, label: 'Permit Check', icon: FileCheck, completed: false, description: 'Verify permissions' },
+    { id: 4, label: 'Permit Check', icon: Shield, completed: false, description: 'Verify permissions' },
     { id: 5, label: 'Choose Date', icon: Calendar, completed: false, description: 'Schedule delivery' },
     { id: 6, label: 'Payment', icon: CreditCard, completed: false, description: 'Secure checkout' }
   ];

@@ -92,10 +92,6 @@ const App = () => {
               <Clock className="w-5 h-5 text-blue-500" />
               <span>14-Day Hire Period</span>
             </div>
-            <div className="flex items-center space-x-2">
-              <Shield className="w-5 h-5 text-purple-500" />
-              <span>Fully Insured</span>
-            </div>
           </div>
         </div>
 
