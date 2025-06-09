@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Truck, Clock, Shield } from 'lucide-react';
+import { Check, Clock} from 'lucide-react';
 import type { Skip } from '../types/skip';
 import { calculateFinalPrice, formatSkipName, getSkipDescription } from '../types/skip';
 
@@ -108,20 +108,6 @@ const SkipCard: React.FC<SkipCardProps> = ({ skip, isSelected, onSelect }) => {
           <div className="bg-black/20 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-medium">
             {getDimensions(skip.size)}
           </div>
-        </div>
-
-        {/* Feature Icons */}
-        <div className="absolute bottom-4 right-4 flex space-x-2">
-          {skip.allowed_on_road && (
-            <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-              <Truck className="w-4 h-4 text-white" />
-            </div>
-          )}
-          {skip.allows_heavy_waste && (
-            <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
-              <Shield className="w-4 h-4 text-white" />
-            </div>
-          )}
         </div>
       </div>
 
